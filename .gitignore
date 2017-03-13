@@ -1,11 +1,13 @@
 .idea/*
 __pycache__/*
+*/__pycache__/*
 Resources/*
 results/*
 data/*
+*/__init__.py
 
-tsv_parser.py
-serializer.py
+src/tsv_parser.py
+src/serializer.py
 *.tsv
 *.xlsx
 
