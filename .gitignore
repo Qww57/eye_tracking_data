@@ -1,0 +1,11 @@
+.idea/*
+__pycache__/*
+Resources/*
+results/*
+data/*
+
+tsv_parser.py
+serializer.py
+*.tsv
+*.xlsx
+
