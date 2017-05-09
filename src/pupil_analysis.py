@@ -58,19 +58,37 @@ def pupil_analysis(d, user, recording):
     for event in events:
         axarr[0].plot(event, mean, marker='o', color='green')
 
+    # 0: Smoothing the curve
+    def smooth(y, box_pts):
+        box = np.ones(box_pts) / box_pts
+        y_smooth = np.convolve(y, box, mode='same')
+        return y_smooth
+    # Deleting the start and the end where errors are introduced
+    smooth_diam_y = smooth(diam_y, 5)
+    axarr[0].plot(diam_x, smooth_diam_y, color= 'green')
+
     # 1: Pupil gradient over time
     axarr[1].set_title('Pupil gradient over time')
     grad_diam_y = np.gradient(np.array(diam_y))
-    axarr[1].plot(diam_x, grad_diam_y, color='grey')
+    axarr[1].plot(diam_x, grad_diam_y * 100, color='grey')
+    grad_diam_y_bis = np.gradient(np.array(smooth_diam_y))
+    axarr[1].plot(diam_x, grad_diam_y_bis * 100, color='blue')
     for event in events:
         axarr[1].plot(event, min(grad_diam_y), marker='o', color='green')
+    # 1: Printing the mean value of pupil
+    mean = np.array(smooth_diam_y).mean()
+    axarr[0].plot((min(diam_x), max(diam_x)), (mean, mean), color='red')
 
     # TODO dynamically compute threshold
-    threshold = 0.15
-    pics_x = []
-    for index in range(0, len(grad_diam_y)-1):
-        if grad_diam_y[index] > threshold or grad_diam_y[index] < -threshold:
-            pics_x.append(diam_x[index])
+    def get_pics(x, y, threshold):
+        pics_x = []
+        for index in range(0, len(y)-1):
+            if y[index] > threshold or y[index] < -threshold:
+                pics_x.append(x[index])
+        return pics_x
+
+    pics_x = get_pics(diam_x, grad_diam_y, 0.15)
+    pics_x_bis = get_pics(diam_x, grad_diam_y_bis, 0.05)
 
     axarr[2].set_title("Gradient optimum and events distribution")
     for event in events:
@@ -78,6 +96,8 @@ def pupil_analysis(d, user, recording):
     # TODO add lines for event positions
     for pic in pics_x:
         axarr[2].plot(pic, 1, marker='x', color='red')
+    for pic in pics_x_bis:
+        axarr[2].plot(pic, 2, marker='x', color='blue')
     axarr[2].plot(0, -2)
     axarr[2].plot(0, 3)
 

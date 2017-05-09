@@ -57,6 +57,7 @@ def quantitative(raw_data, user_id, type):
 
 def describe_quantitative(d, users, save=True):
     """
+    TODO: add line to visualize average mean (red) and std deviations (green).
     :param d:
     :param users:
     :param save:
@@ -94,7 +95,7 @@ def describe_quantitative(d, users, save=True):
             # Saving the results into CSV
             if save is True:
                 base = os.path.dirname(os.path.abspath(__file__))
-                location = base + "\\results\\" + str(user) + "_results.csv"
+                location = base + "\\..\\results\\" + str(user) + "_results.csv"
                 result.to_csv(location, sep=';')
 
             key = keys[value](user)

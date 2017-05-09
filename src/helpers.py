@@ -19,6 +19,18 @@ mi_column = 36               # movement index column
 event_column = 39            # Event type
 recording_column = 40
 
+# Used to speed up the reading of the file by Pandas
+eye_tracking_type = {
+    'Project name': str,
+    # 'Export date': str,
+    'Recording name': str,
+    'Participant name': int,
+    # 'Recording start time': str
+    'Recording duration': str,
+    'Recording fixation filter name': str,
+    'Recording timestamp': int,
+    }
+
 
 def is_number(str):
     try:
@@ -46,6 +58,7 @@ def load(name):
     # Parsing the file line by line and replacing errors if encountered.
     with open(location, errors='replace') as f:
         # Basic approach to read a file
+        # csv_file = pd.read_csv(f, delimiter=';', quotechar='|', dtype=eye_tracking_type)
         csv_file = csv.reader(f, delimiter=';', quotechar='|')
         for line in csv_file:
             unfiltered_data.append(line)

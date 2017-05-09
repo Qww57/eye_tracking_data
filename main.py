@@ -11,9 +11,13 @@ def main():
     print("Start of the algorithm")
     debut = time.time()
 
+    # FOR NOW: cannot load all of them at once.
+    # TODO: pickle save in order to create bigger objects
     files = [
-        "\\..\\data\\all_data_1.csv",
-        "\\..\\data\\all_data_2.csv"
+        # "\\..\\data\\all_data_1.csv",
+        # "\\..\\data\\all_data_34_36.csv",
+        # "\\..\\data\\all_data_38_40.csv",
+        "\\..\\data\\all_data_41_43.csv"
     ]
 
     # Loading the data
@@ -26,10 +30,10 @@ def main():
     print("List of user IDs: " + str(users))
 
     # Describing quantitatively the file
-    describe_quantitative(d, users, save=False)
+    # describe_quantitative(d, users, save=True)
     print("Graphs created in " + str(int(time.time() - debut)) + " seconds")
 
     # Describe pupil diameter of one specific recording
-    pupil_analysis(d, "22", "Recording089")
+    pupil_analysis(d, "43", "Recording177")
 
 main()
