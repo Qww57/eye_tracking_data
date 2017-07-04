@@ -1,0 +1,33 @@
+Participant;Record_Name;Track;Hazard_number;Hazard_type;Seen;First fixation time;First fixation;Second fixation;Third fixation;Fouth fixation;Fifth fixation;Sixth fixation;Seventh fixation;Cross event;Detections;Fixations;Remarks;Detection laps;Percentage of fixation during hazard
+71;Recording295;1;1;1AH;YES;00:18,2;1.02;1.44;0;0;0;0;0;00:24,0;2;2;;5.8;42.414
+71;Recording295;1;2;3CH;YES;00:39,9;0.14;0.48;0.96;0.88;0;0;0;00:47,2;4;4;3 and 4 together;7.3;33.699
+71;Recording295;1;3;2AV;YES;01:00,7;1.68;1.06;1.98;0;0;0;0;01:08,0;3;3;;7.3;64.658
+71;Recording295;1;4;5CV;NO;00:00,0;0;0;0;0;0;0;0;00:00,0;0;0;Kind of look at it during a long fixation, but not specifically;0.0;0
+71;Recording295;1;5;1CV;YES;01:44,6;3.021;0;0;0;0;0;0;01:48,8;1;1;;4.2;71.929
+71;Recording295;1;6;6AV;YES;01:54,1;0.18;0.48;0;0;0;0;0;01:56,3;2;2;1 and 2 together;2.2;30.0
+71;Recording295;1;7;4AH;YES;02:04,3;0.38;0;0;0;0;0;0;02:05,0;1;1;was looking at the tags on the wall (up) and saw the hazard late :);0.7;54.286
+71;Recording295;1;8;6CH;NO;00:00,0;0;0;0;0;0;0;0;00:00,0;0;0;Not really possible to see it in except at the end;0.0;0
+71;Recording294;3;1;6CV;YES;00:28,9;0.42;0;0;0;0;0;0;00:30,7;1;1;;1.8;23.333
+71;Recording294;3;2;4CH;YES;00:31,9;1.72;0.54;0.18;0;0;0;0;00:35,9;3;3;2 and 3 together;4.0;61.0
+71;Recording294;3;3;5AH;NO;00:00,0;0;0;0;0;0;0;0;00:00,0;0;0;;0.0;0
+71;Recording294;3;4;4AV;YES;01:02,2;0.88;2.04;0;0;0;0;0;01:07,2;2;2;;5.0;58.4
+71;Recording294;3;5;5CH;NO;00:00,0;0;0;0;0;0;0;0;00:00,0;0;0;;0.0;0
+71;Recording294;3;6;2CH;YES;01:33,2;0.9;1.04;0.74;0.36;0.06;0;0;01:38,5;5;5;3, 4 and 5 together;5.3;58.491
+71;Recording294;3;7;3CV;YES;01:52,4;2.68;1.24;0.26;1.08;1.26;0.4;0;02:00,2;6;6;1, 2 and 3 together, 5 and 6 together;7.8;88.718
+71;Recording294;3;8;1AV;YES;02:19,4;1.4;1.44;0;0;0;0;0;02:24,3;2;2;;4.9;57.959
+71;Recording293;2;1;1CH;YES;00:16,1;0.68;2.6;0.48;0.8;0.08;0;0;00:22,6;5;5;4 and 5 together;6.5;71.385
+71;Recording293;2;2;2AH;YES;00:45,7;0.74;1.42;0;0;0;0;0;00:46,7;2;2;;1.0;100
+71;Recording293;2;3;4CV;YES;01:00,2;2.4;0.58;0.64;0.84;0;0;0;01:07,7;4;4;;7.5;59.467
+71;Recording293;2;4;5AV;YES;01:26,4;0.22;0.18;0;0;0;0;0;01:28,1;2;2;1 and 2 together;1.7;23.529
+71;Recording293;2;5;3AV;YES;01:28,7;0.82;0.74;0;0;0;0;0;01:34,9;2;2;two are spaced, he looked surprise, didn't really process it maybe;6.2;25.161
+71;Recording293;2;6;3AH;YES;01:42,8;1.88;1.86;1.38;0.14;0.28;0.34;0.18;01:50,7;7;7;4, 5, 6 and 7 together;7.9;76.709
+71;Recording293;2;7;2CV;YES;01:59,2;0.56;0.16;1.32;0;0;0;0;02:04,1;3;3;;4.9;41.633
+71;Recording293;2;8;6AH;YES;02:13,5;0.08;0.24;0.2;0;0;0;0;02:15,3;3;3;Saw it, even it was hard, was searching for it (short looks);1.8;28.889
+71;Recording292;1;1;1AH;YES;00:37,2;1.14;0;0;0;0;0;0;00:39,7;1;1;;2.5;45.6
+71;Recording292;1;2;3CH;YES;01:02,8;0.14;0.16;0.16;0.96;0;0;0;01:09,2;4;4;;6.4;22.188
+71;Recording292;1;3;2AV;YES;01:25,0;0.84;3.861;1.08;0;0;0;0;01:38,3;2;3;;13.3;43.466
+71;Recording292;1;4;5CV;YES;02:00,3;0.28;0.74;0.06;0;0;0;0;02:07,2;3;3;;6.9;15.652
+71;Recording292;1;5;1CV;YES;02:27,5;1.74;3.441;0.18;0.2;0;0;0;02:35,8;2;4;;8.3;67.0
+71;Recording292;1;6;6AV;YES;02:43,7;0.48;0.18;0;0;0;0;0;02:45,8;2;2;;2.1;31.429
+71;Recording292;1;7;4AH;YES;02:51,2;0.94;1.08;0;0;0;0;0;02:55,7;2;2;;4.5;44.889
+71;Recording292;1;8;6CH;YES;03:04,9;0.78;1.02;0.16;0.14;0.6;0;0;03:08,5;5;5;Hard to see, hidden by screen jonction;3.6;75.0
